@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Janavi Kolpekwar (Author2 Name Edited) 
+Janavi Kolpekwar 
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -83,7 +83,23 @@ function drawRectangle(){
  ctx.fillStyle = "black";
  ctx.fillRect(50, 25, 150, 100);
 }
+//This function generates a rectange with the given dimensions and fills the color with black on the canvas.
 	
+function drawName(){
+ ctx.fillText("Janavi", 50, 200);
+}
+//writes my name on the canvas.
+	
+function loadImage(){
+ var img = document.getElementById("picture");
+  ctx.drawImage(img, 0, 0, 150, 200);
+}
+//This loads the image that I included in the body onto the canvas using it's image id.
+	
+function clearCanvas(){
+ c.width = c.width;
+}
+//This will clear all elements displayed on the canvas by setting canvas width equal to each other.	
 </script>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
