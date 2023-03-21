@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Janavi Kolpekwar (Author2 Name Edited) 
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,12 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The Goal of the App is to incorporate a canvas into code and draw via buttons 
  
 Known Issues:
-blah, blah, blah, blah
+Inital issues included incorporating the drawing elemtent into the app (develop interaction with the canvas for users), Issues with indexing (for example parenthesis), and rewrote
+script into the body of code. 
+
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -32,13 +34,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
-
-
-<script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
-</script>
 
 
 
@@ -65,7 +60,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
-</div>
+</div> 
 	
 <div id="content" class="w3-container">
 	<p>Content goes here.</p>
@@ -73,6 +68,23 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+<script>
+//FIXED. Canvas element would go first and then functions would follow to correspond with button work.
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+
+var c = document.getElementById("myCanvas");
+// This variable is retrieves the connection between function and the canvas element in the body.
+var ctx = c.getContext("2d");	
+// This variable is the reason that things are being displayed. The 2d string is a must for the context variable so that fillStyle, fillRect, etc. will generate.
+	
+function drawRectangle(){
+ ctx.fillStyle = "black";
+ ctx.fillRect(50, 25, 150, 100);
+}
+	
+</script>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
