@@ -83,9 +83,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--Important to note that the code will not be used to diagnose any type medical condition-->
 	</div>
 <script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+//Canvas element should go first and then functions will follow to correspond with button work.
+var docMod = document.lastModified; // loads modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+
+var c = document.getElementById("myCanvas");
+// This variable is retrieves the connection between function and the canvas element in the body.
+var ctx = c.getContext("2d");	
+// This variable is the reason that things are being displayed. The 2d string is a must for the context variable so that fillStyle, fillRect, etc. will generate.
 </script>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
