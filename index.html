@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Janavi Kolpekwar 
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Incorporate a canvas using code for users to draw via clicking buttons 
  
 Known Issues:
-blah, blah, blah, blah
+NA yet.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -68,11 +68,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Content goes here.</p>
-		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<br>
+	<canvas id="myCanvas" width="400" height="200"></canvas>
+	<!--This creates the canvas designated as myCanvas that all the buttons pertain to.-->
+	<br>
+	<button onclick="drawRectangle()">Draw Rectangle</button>
+	<!--This button displays the function to draw a Rectange from the script section, generating a black rectangle on the canvas when clicked.-->
+	<button onclick="drawName()">Draw Name</button>
+	<!--Upon clicking this button, my name will generate onto the Canvas via the function created in combination with this button.-->
+	<button onclick="loadImage()">Load Image</button>
+	<!--This uses the image coded on line 80 and generates it upon click using the coordinating function.-->
+	<button onclick="clearCanvas()">Clear Canvas</button>
+	<!--This clears the canvas of any elements drawn or added.-->
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
